@@ -6,16 +6,16 @@ spring:
       max-file-size: 100MB
       max-request-size: 100MB
   datasource:
-    url: jdbc:mysql://localhost/xbook?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
-    username: root
-    password: 123456789
+    url: jdbc:postgresql://john.db.elephantsql.com/xbook?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: dczmpril
+    password: W6kyuRQdkCGhm05b1ieQTDJTrwYumc9N
   jpa:
     generate-ddl: true
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL57Dialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
         storage_engine: innodb
 
 server:
